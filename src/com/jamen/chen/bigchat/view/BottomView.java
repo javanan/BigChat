@@ -36,7 +36,7 @@ public class BottomView extends View {
 	private Paint textPaint;
 	private Paint iocPaint;
 	private float mAlpha;
-
+	private Bitmap mBitmap;
 	private Rect textRect;
 	private Rect iocRect;
 
@@ -45,7 +45,7 @@ public class BottomView extends View {
 	}
 
 	public BottomView(Context context, AttributeSet attrs) {
-		this(context, null, 0);
+		this(context, attrs, 0);
 
 	}
 
@@ -118,7 +118,7 @@ public class BottomView extends View {
 		drawSourceText(canvas, alpha);
 		// 2、绘制变色的文本
 		drawTargetText(canvas, alpha);
-		canvas.drawBitmap(bitmapioc, 0, 0, null);
+		canvas.drawBitmap(mBitmap, 0, 0, null);
 	}
 
 	private void drawTargetText(Canvas canvas, int alpha) {
@@ -143,9 +143,9 @@ public class BottomView extends View {
 	 * 在内存中绘制可变色的Icon
 	 */
 	private void setupTargetBitmap(int alpha) {
-		bitmapioc = Bitmap.createBitmap(getMeasuredWidth(),
+		mBitmap = Bitmap.createBitmap(getMeasuredWidth(),
 				getMeasuredHeight(), Config.ARGB_8888);
-		canvas = new Canvas(bitmapioc);
+		canvas = new Canvas(mBitmap);
 		iocPaint = new Paint();
 		iocPaint.setColor(color);
 		iocPaint.setAntiAlias(true);

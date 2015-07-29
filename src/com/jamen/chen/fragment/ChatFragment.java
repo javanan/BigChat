@@ -1,4 +1,4 @@
-package com.jamen.chen.bigchat;
+package com.jamen.chen.fragment;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -7,13 +7,13 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-public class MainFragment extends Fragment {
+public class ChatFragment extends Fragment {
 
 	private String mTitle="default";
 	public static String TITLE="tittle";
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
-			Bundle savedInstanceState) {
+			Bundle savedInstanceStExpandableListViewate) {
 		
 		if(getArguments()!=null){
 			mTitle=getArguments().getString(TITLE);

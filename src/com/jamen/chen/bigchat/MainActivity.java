@@ -12,16 +12,23 @@ import android.support.v4.view.ViewPager;
 import android.support.v4.view.ViewPager.OnPageChangeListener;
 import android.view.Menu;
 import android.view.View;
+
+
+
 import android.view.View.OnClickListener;
 import android.view.Window;
 
 import com.jamen.chen.bigchat.view.BottomView;
+import com.jamen.chen.fragment.ChatFragment;
+import com.jamen.chen.fragment.ContactFragment;
+import com.jamen.chen.fragment.FindFragment;
+import com.jamen.chen.fragment.MeFragment;
 
 public class MainActivity extends FragmentActivity implements OnClickListener, OnPageChangeListener {
 
 	private ViewPager viewPager;
 	private List<Fragment> viewpage = new ArrayList<Fragment>();
-	private String[] titles = new String[] { "1", "2", "3", "4" };
+	//private String[] titles = new String[] { "1", "2", "3", "4" };
 	private FragmentPagerAdapter adapter;
 	private List<BottomView> bottomviewList = new ArrayList<BottomView>();
 
@@ -41,13 +48,35 @@ public class MainActivity extends FragmentActivity implements OnClickListener, O
 	}
 
 	private void initDate() {
-		for (String title : titles) {
-			MainFragment fragment = new MainFragment();
-			Bundle bundle = new Bundle();
-			bundle.putString(fragment.TITLE, title);
-			fragment.setArguments(bundle);
-			viewpage.add(fragment);
-		}
+		
+			ChatFragment Chatfragment = new ChatFragment();
+			Bundle bundle1 = new Bundle();
+			bundle1.putString(Chatfragment.TITLE, "聊天");
+			Chatfragment.setArguments(bundle1);
+			viewpage.add(Chatfragment);
+		
+			ContactFragment Contractfragment = new ContactFragment();
+			Bundle bundle2 = new Bundle();
+			bundle2.putString(Contractfragment.TITLE, "通讯录");
+			Contractfragment.setArguments(bundle2);
+			viewpage.add(Contractfragment);
+			
+			FindFragment findfragment = new FindFragment();
+			Bundle bundle3 = new Bundle();
+			bundle3.putString(findfragment.TITLE, "发现");
+			findfragment.setArguments(bundle3);
+			viewpage.add(findfragment);
+			
+			MeFragment Mefragment = new MeFragment();
+			Bundle bundle4 = new Bundle();
+			bundle4.putString(Mefragment.TITLE, "我");
+			Mefragment.setArguments(bundle4);
+			viewpage.add(Mefragment);
+			
+			
+			
+			
+			
 		adapter = new FragmentPagerAdapter(getSupportFragmentManager()) {
 
 			@Override
