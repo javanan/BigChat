@@ -18,7 +18,11 @@ import android.util.TypedValue;
 import android.view.View;
 
 import com.jamen.chen.bigchat.R;
-
+/**
+ * 自定义 底部view
+ * @author jamen
+ *
+ */
 public class BottomView extends View {
 
 	private int color = 0xFF45C01A;
