@@ -19,7 +19,7 @@ import android.view.View;
 
 import com.jamen.chen.bigchat.R;
 /**
- * 自定义 底部view
+ * 自定义 底部view..
  * @author jamen
  *
  */
