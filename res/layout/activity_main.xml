@@ -1,0 +1,68 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:bottom="http://schemas.android.com/apk/res/com.jamen.chen.bigchat"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.jamen.chen.bigchat.MainActivity" >
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpage"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+    </android.support.v4.view.ViewPager>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/bottombg"
+        android:orientation="horizontal" >
+
+        <com.jamen.chen.bigchat.view.BottomView
+            android:id="@+id/bottomview_one"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:padding="5dp"
+            bottom:icon="@drawable/ic_menu_start_conversation"
+            bottom:text="@string/app_name"
+            bottom:text_size="12sp"
+            bottom:color="#ff3232ff" />
+
+        <com.jamen.chen.bigchat.view.BottomView
+            android:id="@+id/bottomview_two"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:padding="5dp"
+            bottom:icon="@drawable/ic_menu_friendslist"
+            bottom:text="@string/app_name"
+            bottom:text_size="12sp"
+            bottom:color="#ff3232ff" />
+
+        <com.jamen.chen.bigchat.view.BottomView
+            android:id="@+id/bottomview_three"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:padding="5dp"
+            bottom:icon="@drawable/ic_menu_emoticons"
+            bottom:text="@string/app_name"
+            bottom:text_size="12sp"
+            bottom:color="#ff3232ff" />
+
+        <com.jamen.chen.bigchat.view.BottomView
+            android:id="@+id/bottomview_four"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:padding="5dp"
+            bottom:icon="@drawable/ic_menu_allfriends"
+            bottom:text="@string/app_name"
+            bottom:text_size="12sp"
+            bottom:color="#ff3232ff" />
+    </LinearLayout>
+
+</LinearLayout>

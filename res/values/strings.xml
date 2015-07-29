@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">巨信</string>
+    <string name="action_bar_search">查询</string>
+    <string name="action_bar_add">添加</string>
+    <string name="menu_add_friend">添加朋友</string>
+    <string name="menu_group_chat">发起群聊</string>
+    <string name="menu_scan">扫一扫</string>
+    <string name="menu_help">帮助与反馈</string>
+
+</resources>
