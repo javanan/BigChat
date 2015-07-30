@@ -38,7 +38,7 @@
             android:layout_weight="1"
             android:padding="5dp"
             bottom:icon="@drawable/ic_menu_friendslist"
-            bottom:text="@string/app_name"
+            bottom:text="@string/contrast"
             bottom:text_size="12sp"
             bottom:color="#ff3232ff" />
 
@@ -49,7 +49,7 @@
             android:layout_weight="1"
             android:padding="5dp"
             bottom:icon="@drawable/ic_menu_emoticons"
-            bottom:text="@string/app_name"
+            bottom:text="@string/find"
             bottom:text_size="12sp"
             bottom:color="#ff3232ff" />
 
@@ -60,7 +60,7 @@
             android:layout_weight="1"
             android:padding="5dp"
             bottom:icon="@drawable/ic_menu_allfriends"
-            bottom:text="@string/app_name"
+            bottom:text="@string/mestring"
             bottom:text_size="12sp"
             bottom:color="#ff3232ff" />
     </LinearLayout>

@@ -28,7 +28,6 @@ public class MainActivity extends FragmentActivity implements OnClickListener, O
 
 	private ViewPager viewPager;
 	private List<Fragment> viewpage = new ArrayList<Fragment>();
-	//private String[] titles = new String[] { "1", "2", "3", "4" };
 	private FragmentPagerAdapter adapter;
 	private List<BottomView> bottomviewList = new ArrayList<BottomView>();
 
@@ -56,9 +55,6 @@ public class MainActivity extends FragmentActivity implements OnClickListener, O
 			viewpage.add(Chatfragment);
 		
 			ContactFragment Contractfragment = new ContactFragment();
-			Bundle bundle2 = new Bundle();
-			bundle2.putString(Contractfragment.TITLE, "通讯录");
-			Contractfragment.setArguments(bundle2);
 			viewpage.add(Contractfragment);
 			
 			FindFragment findfragment = new FindFragment();

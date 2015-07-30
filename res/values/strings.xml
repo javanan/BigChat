@@ -9,4 +9,8 @@
     <string name="menu_scan">扫一扫</string>
     <string name="menu_help">帮助与反馈</string>
 
+    
+    <string name="contrast">通讯录</string>
+     <string name="find">发现</string>
+      <string name="mestring">我</string>
 </resources>
