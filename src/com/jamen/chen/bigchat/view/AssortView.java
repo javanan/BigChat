@@ -48,8 +48,9 @@ public class AssortView extends Button {
 			paint.setAntiAlias(true);
 			// 默认粗体
 			paint.setTypeface(Typeface.DEFAULT_BOLD);
-			// 白色
-			paint.setColor(Color.WHITE);
+			// 黑色
+			paint.setColor(Color.BLACK);
+			paint.setTextSize(interval/2);
 			if(i==selectIndex){
 				// 被选择的字母改变颜色和粗体
 				paint.setColor(Color.parseColor("#3399ff"));
